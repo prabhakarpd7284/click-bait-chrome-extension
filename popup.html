@@ -8,9 +8,41 @@
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
     <script src="popup.js"></script>
     <script src="jquery-3.3.1.min.js"></script>
+    <style>
+        .result {
+            background-color: rgba(252, 185, 0, 0.986);
+        }
+        #test {
+            text-align: center;
+            font-size : 170%;
+            width : 600px;
+            height: 400px;
+            background-repeat: no-repeat, repeat;
+            background-image: url("me.jpg"), url("3.jpeg");
+            background-blend-mode: overlay;
+        }
+        #headline{            
+            font-size: 90%;
+        }
+        #checkPage{
+            font-size: 100%;
+
+        }
+    </style>
 </head>
 <body>
-    <h1>Click-Bait Predictor</h1>
-    <button id="checkPage">Check this page...</button>
+    <div id="test">
+        <h1>Click-Bait Predictor</h1>
+        <div id="myForm">
+           <form action="">
+               <input type="text" name="headline" id="headline" placeholder="Enter headline or not......">
+           </form>
+                <button id="checkPage">Check this page...</button>
+        </div>
+            <span id="result" class="result">
+
+            </span>
+    </div>
+
 </body>
 </html>
