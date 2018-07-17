@@ -1,0 +1,14 @@
+{
+    "manifest_version" : 2,
+    "name" : "Click Bait Predictor",
+    "description" : "This extension will predict the probability of a page being a click-bait.",
+    "version" : "1.0",
+
+    "browser_action" : {
+        "default_icon" : "icon.png",
+        "default_popup" : "popup.html"
+    },
+    "permissions" : [
+        "activeTab"
+    ]
+}
